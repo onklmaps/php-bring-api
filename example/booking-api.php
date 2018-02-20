@@ -1,9 +1,9 @@
 <?php
 require '../vendor/autoload.php';
 
-use \Peec\Bring\API\Client\BookingClient;
-use \Peec\Bring\API\Contract\Booking;
-use \Peec\Bring\API\Data\BringData;
+use \Markantnorge\Bring\API\Client\BookingClient;
+use \Markantnorge\Bring\API\Contract\Booking;
+use \Markantnorge\Bring\API\Data\BringData;
 
 // These 3 variable credentials is provided via the My Bring login interface.
 $bringUid = getenv('BRING_UID');
@@ -25,7 +25,7 @@ $bringProductId = BringData::PRODUCT_SERVICEPAKKE;
 
 
 // See http://developer.bring.com/api/booking/ ( Authentication section ) . You will need Client id, api key and client url.
-$credentials = new \Peec\Bring\API\Client\Credentials("http://mydomain.no", $bringUid, $bringApiKey);
+$credentials = new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no", $bringUid, $bringApiKey);
 
 // Create a booking client.
 $client = new BookingClient($credentials);
@@ -106,11 +106,11 @@ try {
     print_r($result);
 
 // Catch response errors.
-} catch (\Peec\Bring\API\Client\BookingClientException $e) {
+} catch (\Markantnorge\Bring\API\Client\BookingClientException $e) {
     print_r($e->getErrors());
     throw $e;
 // Catch errors that relates to the contract / request.
-} catch (\Peec\Bring\API\Contract\ContractValidationException $e) {
+} catch (\Markantnorge\Bring\API\Contract\ContractValidationException $e) {
     throw $e;
 }
 

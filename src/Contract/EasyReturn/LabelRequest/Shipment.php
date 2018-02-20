@@ -9,12 +9,12 @@
  * @date 9/20/16 2:20 PM
  */
 
-namespace Peec\Bring\API\Contract\EasyReturn\LabelRequest;
+namespace Markantnorge\Bring\API\Contract\EasyReturn\LabelRequest;
 
 
-use Peec\Bring\API\Contract\ContractValidationException;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
-class Shipment extends \Peec\Bring\API\Contract\ApiEntity
+class Shipment extends \Markantnorge\Bring\API\Contract\ApiEntity
 {
 
     protected $_data = [

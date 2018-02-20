@@ -1,8 +1,8 @@
 <?php
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 use GuzzleHttp\Exception\RequestException;
-use Peec\Bring\API\Contract\ShippingGuide\PriceRequest;
+use Markantnorge\Bring\API\Contract\ShippingGuide\PriceRequest;
 
 
 /**
@@ -10,7 +10,7 @@ use Peec\Bring\API\Contract\ShippingGuide\PriceRequest;
  *
  * @todo We can implement My bring credentials for shipping guide requests once Bring has fixed the API to work with RESTFUL and not SOAP. See http://developer.bring.com/api/shipping-guide/
  *
- * @package Peec\Bring\API\Client
+ * @package Markantnorge\Bring\API\Client
  */
 class ShippingGuideClient extends Client
 {

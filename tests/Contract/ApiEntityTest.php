@@ -1,14 +1,14 @@
 <?php
-namespace Peec\Bring\API\Contract;
+namespace Markantnorge\Bring\API\Contract;
 
 
 class ApiEntityTest extends \PHPUnit_Framework_TestCase
 {
-    /** @var  \Peec\Bring\API\Contract\ApiEntity */
+    /** @var  \Markantnorge\Bring\API\Contract\ApiEntity */
     protected $entity;
 
     public function setUp () {
-        $stub = $this->getMockForAbstractClass('\Peec\Bring\API\Contract\ApiEntity');
+        $stub = $this->getMockForAbstractClass('\Markantnorge\Bring\API\Contract\ApiEntity');
         $this->entity = $stub;
     }
 

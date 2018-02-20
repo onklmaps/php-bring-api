@@ -1,6 +1,6 @@
 # PHP Bring API 
 
-[![Build Status](https://travis-ci.org/peec/php-bring-api.svg?branch=master)](https://travis-ci.org/peec/php-bring-api)
+[![Build Status](https://travis-ci.org/Markantnorge/php-bring-api.svg?branch=master)](https://travis-ci.org/Markantnorge/php-bring-api)
 
 
 Use this API with any PHP application ( Magento, Wordpress, Drupal, etc. ).
@@ -24,7 +24,7 @@ See [Bring Developer Section](http://developer.bring.com/) for info about the AP
 Install using composer is the best way.
 
 ``` 
-composer require peec/bring-api@^1.0
+composer require Markantnorge/bring-api@^1.0
 ```
 
 ## Supporting the following APIs:

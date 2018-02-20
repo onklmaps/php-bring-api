@@ -1,9 +1,9 @@
 <?php
-namespace Peec\Bring\API\Data;
+namespace Markantnorge\Bring\API\Data;
 
 /**
  * Created by PhpStorm.
- * User: peec
+ * User: Markantnorge
  * Date: 5/24/16
  * Time: 10:34 PM
  */

@@ -9,10 +9,10 @@
  * @date 9/20/16 2:20 PM
  */
 
-namespace Peec\Bring\API\Contract\EasyReturn\LabelRequest;
+namespace Markantnorge\Bring\API\Contract\EasyReturn\LabelRequest;
 
 
-class Recipient extends \Peec\Bring\API\Contract\ApiEntity
+class Recipient extends \Markantnorge\Bring\API\Contract\ApiEntity
 {
     protected $_data = [
         'CustomerId' => null,

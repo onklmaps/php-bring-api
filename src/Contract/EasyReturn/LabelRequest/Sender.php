@@ -1,6 +1,6 @@
 <?php
-namespace Peec\Bring\API\Contract\EasyReturn\LabelRequest;
-use Peec\Bring\API\Contract\ContractValidationException;
+namespace Markantnorge\Bring\API\Contract\EasyReturn\LabelRequest;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
 /**
  * Copyright (C) Markant Norge AS - All Rights Reserved
@@ -10,7 +10,7 @@ use Peec\Bring\API\Contract\ContractValidationException;
  * @author petterk
  * @date 9/20/16 2:18 PM
  */
-class Sender extends \Peec\Bring\API\Contract\ApiEntity
+class Sender extends \Markantnorge\Bring\API\Contract\ApiEntity
 {
     protected $_data = [
         'Name' => null,

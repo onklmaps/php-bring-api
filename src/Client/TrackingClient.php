@@ -1,8 +1,8 @@
 <?php
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 use GuzzleHttp\Exception\RequestException;
-use Peec\Bring\API\Contract\Tracking\TrackingRequest;
+use Markantnorge\Bring\API\Contract\Tracking\TrackingRequest;
 
 class TrackingClient extends Client
 {

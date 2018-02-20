@@ -1,7 +1,7 @@
 <?php
 require '../vendor/autoload.php';
 
-use \Peec\Bring\API\Contract\EasyReturn;
+use \Markantnorge\Bring\API\Contract\EasyReturn;
 
 
 ///
@@ -46,8 +46,8 @@ $bringCustomerNumber = getenv('BRING_CUSTOMER');
 
 
 // See http://developer.bring.com/api/booking/ ( Authentication section ) . You will need Client id, api key and client url.
-$credentials = new \Peec\Bring\API\Client\Credentials("http://mydomain.no", $bringUid, $bringApiKey);
-$client = new \Peec\Bring\API\Client\EasyReturnClient($credentials);
+$credentials = new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no", $bringUid, $bringApiKey);
+$client = new \Markantnorge\Bring\API\Client\EasyReturnClient($credentials);
 
 
 
@@ -96,11 +96,11 @@ try {
     print_r($result);
 
 // Catch response errors.
-} catch (\Peec\Bring\API\Client\EasyReturnClientException $e) {
+} catch (\Markantnorge\Bring\API\Client\EasyReturnClientException $e) {
     print_r($e->getErrors());
     throw $e;
 // Catch errors that relates to the contract / request.
-} catch (\Peec\Bring\API\Contract\ContractValidationException $e) {
+} catch (\Markantnorge\Bring\API\Contract\ContractValidationException $e) {
     throw $e;
 }
 

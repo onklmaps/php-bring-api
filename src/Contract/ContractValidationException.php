@@ -1,6 +1,6 @@
 <?php
 
-namespace Peec\Bring\API\Contract;
+namespace Markantnorge\Bring\API\Contract;
 
 class ContractValidationException extends \Exception
 {

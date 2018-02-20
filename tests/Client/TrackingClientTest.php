@@ -1,7 +1,7 @@
 <?php
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
-use Peec\Bring\API\Contract\Tracking\TrackingRequest;
+use Markantnorge\Bring\API\Contract\Tracking\TrackingRequest;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
@@ -12,11 +12,11 @@ use GuzzleHttp\Exception\RequestException;
 class TrackingClientTest extends \PHPUnit_Framework_TestCase {
 
 
-    /** @var  \Peec\Bring\API\Client\TrackingClient */
+    /** @var  \Markantnorge\Bring\API\Client\TrackingClient */
     protected $entity;
 
     public function setUp () {
-        $credentials = new \Peec\Bring\API\Client\Credentials("http://mydomain.no", getenv('BRING_UID'), getenv('BRING_API_KEY'));
+        $credentials = new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no", getenv('BRING_UID'), getenv('BRING_API_KEY'));
         $client = new TrackingClient($credentials);
 
 
@@ -40,7 +40,7 @@ class TrackingClientTest extends \PHPUnit_Framework_TestCase {
 
         $request = new TrackingRequest();
         $request->setQuery('TESTPACKAGELOADEDFORDELIVERY');
-        $request->setLanguage(\Peec\Bring\API\Data\BringData::LANG_NORWEGIAN);
+        $request->setLanguage(\Markantnorge\Bring\API\Data\BringData::LANG_NORWEGIAN);
 
         $trackingInfo = $this->entity->getTracking($request);
 

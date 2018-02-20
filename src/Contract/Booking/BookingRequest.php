@@ -1,8 +1,8 @@
 <?php
-namespace Peec\Bring\API\Contract\Booking;
+namespace Markantnorge\Bring\API\Contract\Booking;
 
-use Peec\Bring\API\Contract\ApiEntity;
-use Peec\Bring\API\Contract\ContractValidationException;
+use Markantnorge\Bring\API\Contract\ApiEntity;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
 class BookingRequest extends ApiEntity
 {

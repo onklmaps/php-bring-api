@@ -1,14 +1,14 @@
 <?php
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
-use \Peec\Bring\API\Contract\ShippingGuide;
-use Peec\Bring\API\Data\BringData;
-use Peec\Bring\API\Data\ShippingGuideData;
+use \Markantnorge\Bring\API\Contract\ShippingGuide;
+use Markantnorge\Bring\API\Data\BringData;
+use Markantnorge\Bring\API\Data\ShippingGuideData;
 
 
 /**
@@ -16,16 +16,16 @@ use Peec\Bring\API\Data\ShippingGuideData;
  *
  * @todo We can implement My bring credentials for shipping guide requests once Bring has fixed the API to work with RESTFUL and not SOAP. See http://developer.bring.com/api/shipping-guide/
  *
- * @package Peec\Bring\API\Client
+ * @package Markantnorge\Bring\API\Client
  */
 class ShippingGuideClientTest extends \PHPUnit_Framework_TestCase {
 
 
-    /** @var  \Peec\Bring\API\Client\ShippingGuideClient */
+    /** @var  \Markantnorge\Bring\API\Client\ShippingGuideClient */
     protected $entity;
 
     public function setUp () {
-        $credentials = new \Peec\Bring\API\Client\Credentials("http://mydomain.no", getenv('BRING_UID'), getenv('BRING_API_KEY'));
+        $credentials = new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no", getenv('BRING_UID'), getenv('BRING_API_KEY'));
         $client = new ShippingGuideClient($credentials);
 
 

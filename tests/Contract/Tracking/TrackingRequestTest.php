@@ -1,12 +1,12 @@
 <?php
-namespace Peec\Bring\API\Contract\Tracking;
+namespace Markantnorge\Bring\API\Contract\Tracking;
 
-use Peec\Bring\API\Contract\ApiEntity;
-use Peec\Bring\API\Contract\ContractValidationException;
+use Markantnorge\Bring\API\Contract\ApiEntity;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
 class TrackingRequestTest extends \PHPUnit_Framework_TestCase
 {
-    /** @var  \Peec\Bring\API\Contract\Tracking\TrackingRequest */
+    /** @var  \Markantnorge\Bring\API\Contract\Tracking\TrackingRequest */
     protected $entity;
 
     public function setUp () {
@@ -23,7 +23,7 @@ class TrackingRequestTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Peec\Bring\API\Contract\ContractValidationException
+     * @expectedException \Markantnorge\Bring\API\Contract\ContractValidationException
      * @expectedExceptionMessage TrackingRequest requires "q" attribute to be set.
      */
     public function testValidationOfQ () {

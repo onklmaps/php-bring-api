@@ -1,13 +1,13 @@
 <?php
 require '../vendor/autoload.php';
 
-use \Peec\Bring\API\Contract\ShippingGuide;
-use \Peec\Bring\API\Data\ShippingGuideData;
-use \Peec\Bring\API\Data\BringData;
+use \Markantnorge\Bring\API\Contract\ShippingGuide;
+use \Markantnorge\Bring\API\Data\ShippingGuideData;
+use \Markantnorge\Bring\API\Data\BringData;
 
 
 // See http://developer.bring.com/api/booking/ ( Authentication section ) . You will need Client id, api key and client url.
-$client = new \Peec\Bring\API\Client\ShippingGuideClient(new \Peec\Bring\API\Client\Credentials("http://mydomain.no"));
+$client = new \Markantnorge\Bring\API\Client\ShippingGuideClient(new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no"));
 
 $request = new ShippingGuide\PriceRequest();
 
@@ -39,9 +39,9 @@ try {
 
     print_r($prices);
 
-} catch (\Peec\Bring\API\Client\ShippingGuideClientException $e) {
+} catch (\Markantnorge\Bring\API\Client\ShippingGuideClientException $e) {
     throw $e; // just re-throw for testing.
 
-} catch (\Peec\Bring\API\Contract\ContractValidationException $e) {
+} catch (\Markantnorge\Bring\API\Contract\ContractValidationException $e) {
     throw $e;
 }

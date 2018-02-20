@@ -1,7 +1,7 @@
 <?php
-namespace Peec\Bring\API\Contract\EasyReturn;
-use Peec\Bring\API\Contract\ContractValidationException;
-use Peec\Bring\API\Contract\EasyReturn\LabelRequest as Contract;
+namespace Markantnorge\Bring\API\Contract\EasyReturn;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
+use Markantnorge\Bring\API\Contract\EasyReturn\LabelRequest as Contract;
 
 /**
  * Copyright (C) Markant Norge AS - All Rights Reserved
@@ -11,7 +11,7 @@ use Peec\Bring\API\Contract\EasyReturn\LabelRequest as Contract;
  * @author petterk
  * @date 9/20/16 2:15 PM
  */
-class LabelRequest extends \Peec\Bring\API\Contract\ApiEntity
+class LabelRequest extends \Markantnorge\Bring\API\Contract\ApiEntity
 {
 
 

@@ -1,11 +1,11 @@
 <?php
-namespace Peec\Bring\API\Contract;
+namespace Markantnorge\Bring\API\Contract;
 
 
 /**
  * Class ApiEntity
  *
- * @package Peec\Bring\API
+ * @package Markantnorge\Bring\API
  */
 abstract class ApiEntity
 {
@@ -71,7 +71,7 @@ abstract class ApiEntity
     /**
      * Validates this entity. Throws exception if errors.
      * @return mixed
-     * @throws \Peec\Bring\API\Contract\ContractValidationException
+     * @throws \Markantnorge\Bring\API\Contract\ContractValidationException
      */
     abstract public function validate();
 

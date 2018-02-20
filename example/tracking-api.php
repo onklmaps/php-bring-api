@@ -1,20 +1,20 @@
 <?php
 require '../vendor/autoload.php';
 
-use \Peec\Bring\API\Contract\Tracking;
+use \Markantnorge\Bring\API\Contract\Tracking;
 
 // Mybring credentials are not required can be null. See rate limiting in bring developer docs.
 $bringUid = getenv('BRING_UID') ?: null;
 $bringApiKey = getenv('BRING_API_KEY') ?: null;
 
-$client = new \Peec\Bring\API\Client\TrackingClient(new \Peec\Bring\API\Client\Credentials("http://mydomain.no", $bringUid, $bringApiKey));
+$client = new \Markantnorge\Bring\API\Client\TrackingClient(new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no", $bringUid, $bringApiKey));
 
 
 
 
 $request = new Tracking\TrackingRequest();
 $request->setQuery('TESTPACKAGELOADEDFORDELIVERY');
-$request->setLanguage(\Peec\Bring\API\Data\BringData::LANG_NORWEGIAN);
+$request->setLanguage(\Markantnorge\Bring\API\Data\BringData::LANG_NORWEGIAN);
 
 
 try {
@@ -32,10 +32,10 @@ try {
         }
     }
 
-} catch (\Peec\Bring\API\Client\TrackingClientException $e) {
+} catch (\Markantnorge\Bring\API\Client\TrackingClientException $e) {
 
     throw $e->getRequestException();
 
-} catch (\Peec\Bring\API\Contract\ContractValidationException $e) {
+} catch (\Markantnorge\Bring\API\Contract\ContractValidationException $e) {
     throw $e;
 }

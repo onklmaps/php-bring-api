@@ -1,6 +1,6 @@
 <?php
-namespace Peec\Bring\API\Contract\EasyReturn;
-use Peec\Bring\API\Contract\EasyReturn\LabelRequest as Contract;
+namespace Markantnorge\Bring\API\Contract\EasyReturn;
+use Markantnorge\Bring\API\Contract\EasyReturn\LabelRequest as Contract;
 
 /**
  * Copyright (C) Markant Norge AS - All Rights Reserved
@@ -57,7 +57,7 @@ class LabelRequestTest extends \PHPUnit_Framework_TestCase
 
 
     /**
-     * @expectedException \Peec\Bring\API\Contract\ContractValidationException
+     * @expectedException \Markantnorge\Bring\API\Contract\ContractValidationException
      */
     public function testValidationNotPass () {
         $e = $this->entity;

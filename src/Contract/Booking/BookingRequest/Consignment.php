@@ -1,10 +1,10 @@
 <?php
-namespace Peec\Bring\API\Contract\Booking\BookingRequest;
-use Peec\Bring\API\Contract\ApiEntity;
-use Peec\Bring\API\Contract\Booking\BookingRequest\Consignment\Address;
-use Peec\Bring\API\Contract\Booking\BookingRequest\Consignment\Package;
-use Peec\Bring\API\Contract\Booking\BookingRequest\Consignment\Product;
-use Peec\Bring\API\Contract\ContractValidationException;
+namespace Markantnorge\Bring\API\Contract\Booking\BookingRequest;
+use Markantnorge\Bring\API\Contract\ApiEntity;
+use Markantnorge\Bring\API\Contract\Booking\BookingRequest\Consignment\Address;
+use Markantnorge\Bring\API\Contract\Booking\BookingRequest\Consignment\Package;
+use Markantnorge\Bring\API\Contract\Booking\BookingRequest\Consignment\Product;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
 class Consignment extends ApiEntity
 {

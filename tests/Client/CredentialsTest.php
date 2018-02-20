@@ -1,21 +1,21 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: peec
+ * User: Markantnorge
  * Date: 5/24/16
  * Time: 6:50 PM
  */
 
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 
 /**
  * Class Credentials
- * @package Peec\Bring\API
+ * @package Markantnorge\Bring\API
  */
 class CredentialsTest extends \PHPUnit_Framework_TestCase {
 
-    /** @var  \Peec\Bring\API\Client\Credentials */
+    /** @var  \Markantnorge\Bring\API\Client\Credentials */
     protected $entity;
 
     public function setUp () {

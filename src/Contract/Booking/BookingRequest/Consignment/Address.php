@@ -1,7 +1,7 @@
 <?php
-namespace Peec\Bring\API\Contract\Booking\BookingRequest\Consignment;
-use Peec\Bring\API\Contract\ApiEntity;
-use Peec\Bring\API\Contract\ContractValidationException;
+namespace Markantnorge\Bring\API\Contract\Booking\BookingRequest\Consignment;
+use Markantnorge\Bring\API\Contract\ApiEntity;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
 class Address extends ApiEntity
 {

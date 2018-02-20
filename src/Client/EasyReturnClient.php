@@ -1,9 +1,9 @@
 <?php
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 use GuzzleHttp\Exception\RequestException;
-use Peec\Bring\API\Contract\Booking\BookingRequest;
-use Peec\Bring\API\Contract\EasyReturn\LabelRequest;
+use Markantnorge\Bring\API\Contract\Booking\BookingRequest;
+use Markantnorge\Bring\API\Contract\EasyReturn\LabelRequest;
 
 class EasyReturnClient extends Client
 {

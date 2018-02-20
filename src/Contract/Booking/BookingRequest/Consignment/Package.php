@@ -1,8 +1,8 @@
 <?php
-namespace Peec\Bring\API\Contract\Booking\BookingRequest\Consignment;
+namespace Markantnorge\Bring\API\Contract\Booking\BookingRequest\Consignment;
 
-use Peec\Bring\API\Contract\ApiEntity;
-use Peec\Bring\API\Contract\ContractValidationException;
+use Markantnorge\Bring\API\Contract\ApiEntity;
+use Markantnorge\Bring\API\Contract\ContractValidationException;
 
 
 

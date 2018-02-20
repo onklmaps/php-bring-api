@@ -1,8 +1,8 @@
 <?php
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 use GuzzleHttp\Exception\RequestException;
-use Peec\Bring\API\Contract\Booking\BookingRequest;
+use Markantnorge\Bring\API\Contract\Booking\BookingRequest;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
@@ -12,11 +12,11 @@ class BookingClientTest extends \PHPUnit_Framework_TestCase {
 
 
 
-    /** @var  \Peec\Bring\API\Client\BookingClient */
+    /** @var  \Markantnorge\Bring\API\Client\BookingClient */
     protected $entity;
 
     public function setUp () {
-        $credentials = new \Peec\Bring\API\Client\Credentials("http://mydomain.no", getenv('BRING_UID'), getenv('BRING_API_KEY'));
+        $credentials = new \Markantnorge\Bring\API\Client\Credentials("http://mydomain.no", getenv('BRING_UID'), getenv('BRING_API_KEY'));
         $client = new BookingClient($credentials);
 
 

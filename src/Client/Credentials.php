@@ -1,17 +1,17 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: peec
+ * User: Markantnorge
  * Date: 5/24/16
  * Time: 6:50 PM
  */
 
-namespace Peec\Bring\API\Client;
+namespace Markantnorge\Bring\API\Client;
 
 
 /**
  * Class Credentials
- * @package Peec\Bring\API
+ * @package Markantnorge\Bring\API
  */
 class Credentials {
 
