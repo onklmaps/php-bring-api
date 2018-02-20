@@ -18,15 +18,15 @@ $productCode = 0341; // always 0341
 $weight = 5;
 
 $senderCountryCode = "NO";
-$senderName = "Petter Kjelkenes";
+$senderName = "Ola Nordmann";
 $senderCity = "Bergen";
-$senderStreet = "Erleveien 30f";
+$senderStreet = "Nagelgården 6";
 
 
-$recipientName = "Petter Kjelkenes";
+$recipientName = "Ola Nordmann";
 $recipientCity = "Bergen";
 $recipientCountryCode = "NO";
-$recipientStreet = "Erleveien 30f";
+$recipientStreet = "Nagelgården 6";
 
 
 $shipDate = new \DateTime('now');

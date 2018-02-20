@@ -5,7 +5,7 @@
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  *
- * @author petterk
+ * 
  * @date 9/20/16 2:20 PM
  */
 
