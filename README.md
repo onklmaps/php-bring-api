@@ -1,5 +1,4 @@
 # PHP Bring API 
-
 Use this API with any PHP application ( Magento, Wordpress, Drupal, etc. ).
 
 Features:
