@@ -3,13 +3,6 @@
   "description": "Bring API wrapper for PHP.",
   "type": "library",
   "version": "1.0.5",
-  "authors": [
-    {
-      "name": "Petter Kjelkenes",
-      "email": "kjelkenes@gmail.com",
-      "homepage": "http://pkj.no"
-    }
-  ],
   "license": [
   ],
   "require": {
