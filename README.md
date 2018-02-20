@@ -24,7 +24,7 @@ See [Bring Developer Section](http://developer.bring.com/) for info about the AP
 Install using composer is the best way.
 
 ``` 
-composer require Markantnorge/bring-api@^1.0
+composer require markant-norge/bring-api@^1.0
 ```
 
 ## Supporting the following APIs:
