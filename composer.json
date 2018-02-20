@@ -1,5 +1,5 @@
 {
-  "name": "markant-norge/bring-api",
+  "name": "markant-norge/php-bring-api",
   "description": "Bring API wrapper for PHP.",
   "type": "library",
   "version": "1.0.5",
