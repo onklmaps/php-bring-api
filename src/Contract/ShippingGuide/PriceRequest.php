@@ -36,7 +36,7 @@ class PriceRequest extends ApiEntity
      * @return $this
      */
     public function setFrom($from) {
-        return $this->setData('from', $from);
+        return $this->setData('frompostalcode', $from);
     }
 
     /**
@@ -45,7 +45,7 @@ class PriceRequest extends ApiEntity
      * @return $this
      */
     public function setTo($to) {
-        return $this->setData('to', $to);
+        return $this->setData('topostalcode', $to);
     }
 
     /**
@@ -54,7 +54,7 @@ class PriceRequest extends ApiEntity
      * @return $this
      */
     public function setWeightInGrams($weightInGrams) {
-        return $this->setData('weightInGrams', $weightInGrams);
+        return $this->setData('weight', $weightInGrams);
     }
 
     /**
@@ -128,7 +128,7 @@ class PriceRequest extends ApiEntity
      * @return $this
      */
     public function addAdditional($additional) {
-        return $this->addData('additional', $additional);
+        return $this->addData('additionalservice', $additional);
     }
 
     /**
@@ -179,7 +179,7 @@ class PriceRequest extends ApiEntity
      * @return $this
      */
     public function setFromCountry($fromCountry) {
-        return $this->setData('fromCountry', $fromCountry);
+        return $this->setData('fromcountry', $fromCountry);
     }
 
     /**
@@ -187,7 +187,7 @@ class PriceRequest extends ApiEntity
      * @return $this
      */
     public function setToCountry($toCountry) {
-        return $this->setData('toCountry', $toCountry);
+        return $this->setData('tocountry', $toCountry);
     }
 
 
