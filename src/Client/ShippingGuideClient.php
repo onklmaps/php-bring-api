@@ -14,7 +14,7 @@ use Markantnorge\Bring\API\Contract\ShippingGuide\PriceRequest;
  */
 class ShippingGuideClient extends Client
 {
-    const BRING_PRICES_API = 'https://api.bring.com/shippingguide/products/price.json';
+    const BRING_PRICES_API = 'https://api.bring.com/shippingguide/v2/products';
 
     protected $_apiBringPrices = self::BRING_PRICES_API;
 
