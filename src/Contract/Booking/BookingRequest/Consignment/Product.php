@@ -57,6 +57,10 @@ class Product extends ApiEntity
         $this->addData('services', $service);
     }
 
+    public function setServices ($services) {
+        $this->_data['services'] = $services;
+    }
+
     public function validate()
     {
         if (!$this->containsData('id') || !$this->getData('id')) {
@@ -71,7 +75,7 @@ class Product extends ApiEntity
         if ($services = $this->getData('services')) {
             $map = self::serviceMapping();
             $allowed_services = $map[$packageId];
-            foreach ($services as $service) {
+            foreach ($services as $service => $value) {
                 if (!in_array($service, $allowed_services)) {
                     throw new ContractValidationException('BookingRequest\Consignment\Product has invalid service set ("'.$service.'"). Allowed services are: ' . implode(',', $allowed_services));
                 }
