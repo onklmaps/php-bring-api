@@ -26,7 +26,8 @@ class PriceRequest extends ApiEntity
         'language' => null,
         'volumeSpecial' => null,
         'fromCountry' => null,
-        'toCountry' => null
+        'toCountry' => null,
+        'customernumber'=> null
     ];
 
 
@@ -82,6 +83,15 @@ class PriceRequest extends ApiEntity
      */
     public function setHeight ($height) {
         return $this->setData('height', $height);
+    }
+
+    /**
+     * customernumber from system configurations
+     * @param $customerNumber
+     * @return $this
+     */
+    public function setCustomerNumber($customerNumber){
+        return $this->setData('customernumber', $customerNumber);
     }
 
     /**
