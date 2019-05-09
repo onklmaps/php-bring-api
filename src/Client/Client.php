@@ -55,7 +55,7 @@ abstract class Client {
         }
 
 
-        $req = $this->_client->send($this->_client->createRequest($method, $endpoint, $options));
+        $req = $this->_client->send($this->_client->createRequest($method, $endpoint, $options)); 
         return $req;
     }
 
